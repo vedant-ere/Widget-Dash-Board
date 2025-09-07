@@ -17,7 +17,6 @@ const Dashboard = () => {
               {category.name}
             </h2>
 
-            {/* making the grid responsive ; how? -> by using grid grid-cols-1 and different for different size o devies */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {category.widgets.map((widget) => (
                 <div
