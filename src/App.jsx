@@ -1,12 +1,13 @@
 import React from 'react';
 import Dashboard from './components/DashBoard/DashBoard';
+import { DashboardProvider } from './context/dashBoardContext.jsx';
 import './index.css';
 
 function App() {
   return (
-    <div className="App">
+    <DashboardProvider>
       <Dashboard />
-    </div>
+    </DashboardProvider>
   );
 }
 
