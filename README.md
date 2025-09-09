@@ -1,12 +1,79 @@
-# React + Vite
+# Dashboard Widget Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based dashboard application for managing widgets with dynamic add/remove functionality and search capabilities.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (version 16 or higher)
+- npm (comes with Node.js)
 
-## Expanding the ESLint configuration
+Check your versions:
+```bash
+node --version
+npm --version
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation Steps
+
+### 1. Clone the repository
+```bash
+git clone <your-repository-url>
+cd dashboard-widget-management
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Start the application
+```bash
+npm start
+```
+
+The app will open automatically at `http://localhost:3000`
+
+## Project Structure
+
+```
+src/
+  components/
+    Dashboard/Dashboard.js
+    Widget/Widget.js
+    AddWidget/AddWidget.js
+    Search/Search.js
+    WidgetSidebar/WidgetSidebar.js
+  context/DashboardContext.js
+  data/dashboardData.json
+  App.js
+  index.js
+  index.css
+```
+
+## How to Use
+
+1. View widgets on the main dashboard
+2. Use search bar to find specific widgets
+3. Click "Manage Widgets" to open sidebar
+4. Check/uncheck widgets to show/hide them
+5. Click "+" to add new widgets
+6. Click trash icon to delete widgets
+
+## Troubleshooting
+
+**Port 3000 already in use:**
+```bash
+PORT=3001 npm start
+```
+
+**Installation issues:**
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+## Tech Stack
+
+- React.js
+- Tailwind CSS
+- React Context API
