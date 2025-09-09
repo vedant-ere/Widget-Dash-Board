@@ -1,8 +1,8 @@
 import React from 'react';
-import { useDashBoard } from '../../context/dashBoardContext.jsx';
+import { useDashboard } from '../../context/dashBoardContext.jsx';
 
 const Search = () => {
-  const { searchTerm, setSearchTerm } = useDashBoard();
+  const { searchTerm, setSearchTerm } = useDashboard();
 
   return (
     <div className="mb-6">

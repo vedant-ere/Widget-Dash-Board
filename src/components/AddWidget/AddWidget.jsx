@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { useDashBoard } from '../../context/dashBoardContext.jsx';
+import { useDashboard } from '../../context/dashBoardContext.jsx';
 
 const AddWidget = ({ categoryId, categoryName }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [widgetName, setWidgetName] = useState('');
   const [widgetText, setWidgetText] = useState('');
-  const { addWidget } = useDashBoard();
+  const { addWidget } = useDashboard();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ const AddWidget = ({ categoryId, categoryName }) => {
   return (
     <>
       {/* Add Widget Button */}
-      <div className="border-2 border-dashed border-gray-300 rounded-md p-4 flex items-center justify-center min-h-[120px] hover:border-gray-400 transition-colors">
+      <div className="border-2 cursor-pointer border-dashed border-gray-300 rounded-md p-4 flex items-center justify-center min-h-[120px] hover:border-gray-400 transition-colors">
         <button
           onClick={() => setIsModalOpen(true)}
           className="text-gray-500 hover:text-gray-700 flex flex-col items-center"
@@ -43,8 +43,8 @@ const AddWidget = ({ categoryId, categoryName }) => {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg p-6 w-full max-w-md mx-4">
+        <div className="fixed inset-0  bg-opacity-40 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 w-full max-w-md mx-4 shadow-2xl">
             <h3 className="text-lg font-semibold mb-4">
               Add Widget to {categoryName}
             </h3>

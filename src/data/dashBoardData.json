@@ -7,12 +7,20 @@
         {
           "id": "widget-1",
           "name": "Cloud Accounts",
-          "text": "Connected (2), Not Connected (2)"
+          "text": "Connected (2), Not Connected (2)",
+          "isActive": true
         },
         {
           "id": "widget-2",
           "name": "Cloud Account Risk Assessment", 
-          "text": "Failed (1689), Warning (681), Not Available (36), Passed (7253)"
+          "text": "Failed (1689), Warning (681), Not Available (36), Passed (7253)",
+          "isActive": true
+        },
+        {
+          "id": "widget-3",
+          "name": "Cloud Security Compliance",
+          "text": "Compliant (85%), Non-Compliant (15%)",
+          "isActive": false
         }
       ]
     },
@@ -21,14 +29,22 @@
       "name": "CWPP Dashboard",
       "widgets": [
         {
-          "id": "widget-3",
+          "id": "widget-4",
           "name": "Top 5 Namespace Specific Alerts",
-          "text": "No Graph data available!"
+          "text": "No Graph data available!",
+          "isActive": true
         },
         {
-          "id": "widget-4",
+          "id": "widget-5",
           "name": "Workload Alerts",
-          "text": "No Graph data available!"
+          "text": "No Graph data available!",
+          "isActive": false
+        },
+        {
+          "id": "widget-6",
+          "name": "Container Security",
+          "text": "Secure (234), Vulnerable (12)",
+          "isActive": false
         }
       ]
     },
@@ -37,14 +53,22 @@
       "name": "Registry Scan",
       "widgets": [
         {
-          "id": "widget-5",
+          "id": "widget-7",
           "name": "Image Risk Assessment",
-          "text": "1470 Total Vulnerabilities"
+          "text": "1470 Total Vulnerabilities",
+          "isActive": true
         },
         {
-          "id": "widget-6",
+          "id": "widget-8",
           "name": "Image Security Issues",
-          "text": "2 Total Images"
+          "text": "2 Total Images",
+          "isActive": true
+        },
+        {
+          "id": "widget-9",
+          "name": "Registry Compliance",
+          "text": "Compliant (78%), Issues (22%)",
+          "isActive": false
         }
       ]
     }
