@@ -18,7 +18,7 @@ npm --version
 ### 1. Clone the repository
 ```bash
 git clone <your-repository-url>
-cd dashboard-widget-management
+cd Widget-Dash-Board
 ```
 
 ### 2. Install dependencies
@@ -28,10 +28,10 @@ npm install
 
 ### 3. Start the application
 ```bash
-npm start
+npm run dev or npm start
 ```
 
-The app will open automatically at `http://localhost:3000`
+The app will open automatically at `http://localhost:5173`
 
 ## Project Structure
 
@@ -59,12 +59,7 @@ src/
 5. Click "+" to add new widgets
 6. Click trash icon to delete widgets
 
-## Troubleshooting
 
-**Port 3000 already in use:**
-```bash
-PORT=3001 npm start
-```
 
 **Installation issues:**
 ```bash
